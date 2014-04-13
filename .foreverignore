@@ -1,4 +1,4 @@
-.idea/*
-public/*
-views/*
-node_modules/*
+.idea/**
+public/**
+views/**
+node_modules/**

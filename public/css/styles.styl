@@ -1,15 +1,25 @@
 $red = #c90000
 $milk = #fcfcfc
+$ss = 'Open Sans Condensed', sans-serif
+$commonfamily = sans-serif
 
 body
   padding 0
   margin 0
   background url(../images/bg.jpg) repeat top center
-  /*background-size 100% auto*/
+
+a:link,
+a:visited
+  color $red
+  text-decoration none
+  border-bottom solid 1px
+
+a:hover,
+a:active
+  color rosybrown
 
 .wrapper
   width 920px
-  //min-height 300px
   margin 0 auto
   background $milk
   padding-top 24px + 29px
@@ -41,7 +51,7 @@ body
   top 98px
   right 0
   color $red
-  font 26px/1 'Open Sans Condensed', sans-serif
+  font 26px/1 $ss
 
 .main-menu
   overflow hidden
@@ -71,6 +81,7 @@ body
       color #818181
       text-decoration none
       transition color .2s linear
+      border-width 0
 
     &:hover,
     &:active
@@ -79,10 +90,114 @@ body
       a
         color #000
 
-.fish
-  height 350px
+.content
+  padding 20px 30px
   background white
+  -webkit-box-shadow 0 0 10px 0 rgba(0, 0, 0, 0.2)
+  box-shadow 0 0 10px 0 rgba(0, 0, 0, 0.2)
+
+.grid
+  font-size 0
+
+  &__2-3,
+  &__1-3
+    display inline-block
+    vertical-align top
+    /*-moz-box-sizing border-box*/
+    /*box-sizing border-box*/
+
+  &__2-3
+    width 67%
+    font 22px/20px $ss
+
+  &__1-3
+    width 33%
+    text-align right
+    overflow hidden
+
+  &__1-2
+    display inline-block
+    vertical-align top
+    width 50%
+    font 22px/20px $ss
+
+.work
+  min-height 300px
+
+  h2
+    font 24px/1 $ss
+
+    .bright
+      color $red
+
+  h3
+    font 20px/1 $ss
+
+  section
+    font 14px/1.4 $commonfamily
+    margin-bottom 30px
+
+  .work__image
+    float right
+    padding 10px
+
+  .work__price
+    width 100%
+    height auto
+    padding-top 20px
+
+.work_tmm
+  .work__image
+    width 350px
+
+.teach
+  min-height 300px
+
+  h2
+    font 24px/1 $ss
+
+    .bright
+      color $red
+
+  section
+    font 14px/1.4 $commonfamily
+    margin-bottom 60px
+
+    li
+      margin 5px 0
+
+.contact
+  min-height 300px
+
+  h2
+    font 24px/1 $ss
+
+    .bright
+      color $red
+
+  section
+    font 18px/1.4 $ss
+    margin-bottom 60px
+
+.owl-carousel
+  h2
+    margin-bottom 30px
+    font 24px/1 $ss
+    color $red
+  p
+    margin 0 0 15px
+
+  .owl-item
+    padding-bottom 10px
+
+    img
+      float right
+      width 300px
+      height auto
+      padding 5px
+
 .red-line
   margin-top 30px
   border-top 4px solid $red
   padding 50px
+  background url(../images/money-icons.jpg) no-repeat 0 28px

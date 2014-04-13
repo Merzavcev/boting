@@ -2,7 +2,16 @@ body {
   padding: 0;
   margin: 0;
   background: url("../images/bg.jpg") repeat top center;
-/*background-size 100% auto*/
+}
+a:link,
+a:visited {
+  color: #c90000;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+a:hover,
+a:active {
+  color: #bc8f8f;
 }
 .wrapper {
   width: 920px;
@@ -67,6 +76,7 @@ body {
   color: #818181;
   text-decoration: none;
   transition: color 0.2s linear;
+  border-width: 0;
 }
 .main-menu__item:hover,
 .main-menu__item:active {
@@ -76,12 +86,114 @@ body {
 .main-menu__item:active a {
   color: #000;
 }
-.fish {
-  height: 350px;
+.content {
+  padding: 20px 30px;
   background: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+.grid {
+  font-size: 0;
+}
+.grid__2-3,
+.grid__1-3 {
+  display: inline-block;
+  vertical-align: top;
+/*-moz-box-sizing border-box*/
+/*box-sizing border-box*/
+}
+.grid__2-3 {
+  width: 67%;
+  font: 22px/20px 'Open Sans Condensed', sans-serif;
+}
+.grid__1-3 {
+  width: 33%;
+  text-align: right;
+  overflow: hidden;
+}
+.grid__1-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  font: 22px/20px 'Open Sans Condensed', sans-serif;
+}
+.work {
+  min-height: 300px;
+}
+.work h2 {
+  font: 24px/1 'Open Sans Condensed', sans-serif;
+}
+.work h2 .bright {
+  color: #c90000;
+}
+.work h3 {
+  font: 20px/1 'Open Sans Condensed', sans-serif;
+}
+.work section {
+  font: 14px/1.4 sans-serif;
+  margin-bottom: 30px;
+}
+.work .work__image {
+  float: right;
+  padding: 10px;
+}
+.work .work__price {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+.work_tmm .work__image {
+  width: 350px;
+}
+.teach {
+  min-height: 300px;
+}
+.teach h2 {
+  font: 24px/1 'Open Sans Condensed', sans-serif;
+}
+.teach h2 .bright {
+  color: #c90000;
+}
+.teach section {
+  font: 14px/1.4 sans-serif;
+  margin-bottom: 60px;
+}
+.teach section li {
+  margin: 5px 0;
+}
+.contact {
+  min-height: 300px;
+}
+.contact h2 {
+  font: 24px/1 'Open Sans Condensed', sans-serif;
+}
+.contact h2 .bright {
+  color: #c90000;
+}
+.contact section {
+  font: 18px/1.4 'Open Sans Condensed', sans-serif;
+  margin-bottom: 60px;
+}
+.owl-carousel h2 {
+  margin-bottom: 30px;
+  font: 24px/1 'Open Sans Condensed', sans-serif;
+  color: #c90000;
+}
+.owl-carousel p {
+  margin: 0 0 15px;
+}
+.owl-carousel .owl-item {
+  padding-bottom: 10px;
+}
+.owl-carousel .owl-item img {
+  float: right;
+  width: 300px;
+  height: auto;
+  padding: 5px;
 }
 .red-line {
   margin-top: 30px;
   border-top: 4px solid #c90000;
   padding: 50px;
+  background: url("../images/money-icons.jpg") no-repeat 0 28px;
 }

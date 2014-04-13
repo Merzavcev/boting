@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    if carousel
+        .grid
+            .grid__2-3
+                div#owl-example.owl-carousel
+                    each item in carousel
+                        div
+                            h2= item.title
+                            a(href=item.href, title=item.title): img(src=item.img)
+                            !=item.text
+                            a(href=item.href, title=item.title) Подробнее
+            .form.grid__1-3
+                iframe.form-iframe(src="https://docs.google.com/forms/d/1ApHrJTB9dyffPzxhE5kMyqFYHWJGBx0y_x2thfXlFvw/viewform?embedded=true", width="250", height="330", frameborder="0", marginheight="0", marginwidth="0")

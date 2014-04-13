@@ -1,10 +1,11 @@
 var express = require('express'),
-    menuItems = require('./routes/menu.js'),
     app = express(),
+    routes = require('./routes'),
     port = process.env.PORT || 3000;
 
+app.locals.phone = '+7 916 674-41-91';
 app.use(express.static(__dirname + '/public'));
-
+routes(app);
 // seams it was working in express 3.0, not 4.0
 //app.configure('development', function() {
 //    app.use(express.errorHandler({
@@ -17,33 +18,6 @@ app.use(express.static(__dirname + '/public'));
 //    app.use(express.errorHandler());
 //});
 
-app.get('/', function (req, res) {
-    res.render('layout.jade', {
-        pageTitle: 'Boting.pro',
-        menuItems: menuItems(req.url)
-    });
-})
-
-app.get('/work', function (req, res) {
-    res.render('layout.jade', {
-        pageTitle: 'Сделаем',
-        menuItems: menuItems(req.url)
-    });
-})
-
-app.get('/teach', function (req, res) {
-    res.render('layout.jade', {
-        pageTitle: 'Научим',
-        menuItems: menuItems(req.url)
-    });
-})
-
-app.get('/contact', function (req, res) {
-    res.render('layout.jade', {
-        pageTitle: 'Контакты',
-        menuItems: menuItems(req.url)
-    });
-})
 
 app.listen(port, function () {
     console.log('Listening on port ', port)

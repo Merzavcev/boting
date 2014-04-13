@@ -3,14 +3,16 @@ html(lang="ru")
     head
         title=pageTitle
         link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic', rel='stylesheet', type='text/css')
-        link(href="css/styles.css", rel="stylesheet")
-        link(href="favicon.ico", rel="shortcut icon")
+        link(href="/css/styles.css", rel="stylesheet")
+        link(href="/css/owl.carousel.css", rel="stylesheet")
+        link(href="/css/owl.theme.css", rel="stylesheet")
+        link(href="/favicon.ico", rel="shortcut icon")
     body
         div.wrapper
             .line.rel.promo
                 .logo
-                .big-phone +7 916 674-41-91
-            .line
+                .big-phone= phone
+            nav.line
                 .main-menu
                     each item in menuItems
                         if item.active
@@ -20,5 +22,11 @@ html(lang="ru")
                             li.main-menu__item
                                 a(href= item.href)= item.title
 
-            .line.fish
+            article.line.content
+                block content
+
             .line.red-line
+
+        script(src='//yastatic.net/jquery/2.1.0/jquery.min.js')
+        script(src='/js/vendor/owl.carousel.min.js')
+        script(src='/js/scripts.js')
