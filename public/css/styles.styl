@@ -1,0 +1,88 @@
+$red = #c90000
+$milk = #fcfcfc
+
+body
+  padding 0
+  margin 0
+  background url(../images/bg.jpg) repeat top center
+  /*background-size 100% auto*/
+
+.wrapper
+  width 920px
+  //min-height 300px
+  margin 0 auto
+  background $milk
+  padding-top 24px + 29px
+  border-left 1px solid #FFF
+  border-right 1px solid #FFF
+  -webkit-box-shadow 0 0 10px 0 rgba(0, 0, 0, 0.2)
+  box-shadow 0 0 10px 0 rgba(0, 0, 0, 0.2)
+
+.line
+  margin-left 44px
+  margin-right 44px
+
+.rel
+  position relative
+
+.promo
+  height 68px
+
+.logo
+  position absolute
+  top 0
+  left 0
+  height 68px
+  width 184px
+  background url(../images/logo.png) no-repeat top left
+
+.big-phone
+  position absolute
+  top 98px
+  right 0
+  color $red
+  font 26px/1 'Open Sans Condensed', sans-serif
+
+.main-menu
+  overflow hidden
+  margin-top 20px
+  margin-bottom 24px
+  list-style none
+  border-bottom 1px solid #CCC
+
+  &__item
+    display block
+    list-style none
+    position relative
+    float left
+    height 30px
+    padding 15px 3px 0 0
+    overflow hidden
+    font 20px/1 'Open Sans Condensed', sans-serif
+    transition border-color .2s linear
+    border-bottom 3px solid $milk
+
+    &_active
+      border-bottom 3px solid $red
+
+    a:link,
+    a:visited
+      padding-right 20px
+      color #818181
+      text-decoration none
+      transition color .2s linear
+
+    &:hover,
+    &:active
+
+      border-bottom 3px solid $red
+      a
+        color #000
+
+.fish
+  height 350px
+  background white
+.red-line
+  margin-top 30px
+  border-top 4px solid $red
+  padding 50px

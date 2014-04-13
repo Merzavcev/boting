@@ -1,0 +1,28 @@
+{
+  "name": "boting",
+  "version": "0.0.1",
+  "description": "refactoring of boting.pro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Merzavcev/boting.git"
+  },
+  "keywords": [
+    "boting",
+    "bmstu"
+  ],
+  "author": "merzavcev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Merzavcev/boting/issues"
+  },
+  "homepage": "https://github.com/Merzavcev/boting",
+  "devDependencies": {
+    "express-generator": "^4.0.0",
+    "express": "^4.0.0",
+    "jade": "^1.3.1"
+  }
+}

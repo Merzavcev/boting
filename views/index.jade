@@ -1,0 +1,23 @@
+doctype html
+html(lang="ru")
+    head
+        title=pageTitle
+        link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic', rel='stylesheet', type='text/css')
+        link(href="css/styles.css", rel="stylesheet")
+    body
+        div.wrapper
+            .line.rel.promo
+                .logo
+                .big-phone +7 916 674-41-91
+            .line
+                .main-menu
+                    each item in menuItems
+                        if item.active
+                             li.main-menu__item.main-menu__item_active
+                                a(href= item.href)= item.title
+                        else
+                            li.main-menu__item
+                                a(href= item.href)= item.title
+
+            .line.fish
+            .line.red-line
