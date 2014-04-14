@@ -11,7 +11,7 @@ module.exports = function (app) {
     })
 
     app.get('/work', function (req, res) {
-        res.render('layout.jade', {
+        res.render('work/dm.jade', {
             pageTitle: 'Сделаем',
             menuItems: menuItems(req.url)
         });

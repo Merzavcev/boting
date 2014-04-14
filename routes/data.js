@@ -41,7 +41,15 @@ var menuItems = [
     },
     {
         title: 'СДЕЛАЕМ',
-        href: '/work'
+        href: '/work',
+        nested : [{
+            title: 'КУРСОВЫЕ ПРОЕКТЫ ДЕТАЛИ МАШИН',
+            href: '/work/dm',
+        },
+        {
+            title: 'КУРСОВЫЕ ПРОЕКТЫ ТММ',
+            href: '/work/tmm'
+        }]
     },
     {
         title: 'НАУЧИМ',

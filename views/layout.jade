@@ -13,14 +13,17 @@ html(lang="ru")
                 .logo
                 .big-phone= phone
             nav.line
-                .main-menu
+                ul.main-menu
                     each item in menuItems
                         if item.active
-                             li.main-menu__item.main-menu__item_active
-                                a(href= item.href)= item.title
+                             li.main-menu__item.main-menu__item_active: a(href= item.href)= item.title
                         else
                             li.main-menu__item
                                 a(href= item.href)= item.title
+                                if item.nested
+                                    ul.sub-menu
+                                        each subItem in item.nested
+                                            li.sub-menu__item: a(href= subItem.href)= subItem.title
 
             article.line.content
                 block content
