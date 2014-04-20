@@ -103,7 +103,6 @@ a:active
 
 
 .sub-menu
-  //display none
   max-height 0
   opacity 0
   -webkit-transition max-height .3s ease-in-out, opacity .4s linear
@@ -150,8 +149,6 @@ a:active
   &__1-3
     display inline-block
     vertical-align top
-    /*-moz-box-sizing border-box*/
-    /*box-sizing border-box*/
 
   &__2-3
     width 67%
@@ -184,11 +181,11 @@ a:active
     font 14px/1.4 $commonfamily
     margin-bottom 30px
 
-  .work__image
+  &__image
     float right
     padding 10px
 
-  .work__price
+  &__price
     width 100%
     height auto
     padding-top 20px
@@ -200,15 +197,15 @@ a:active
 .teach
   min-height 300px
 
-  h2
-    font 24px/1 $ss
-
-    .bright
-      color $red
-
   section
     font 14px/1.4 $commonfamily
     margin-bottom 60px
+
+    h2
+      font 24px/1 $ss
+
+      .bright
+        color $red
 
     li
       margin 5px 0
@@ -216,15 +213,27 @@ a:active
 .contact
   min-height 300px
 
+  section
+    font 18px/1.4 $ss
+    margin-bottom 60px
+
+    h2
+      font 24px/1 $ss
+
+      .bright
+        color $red
+
+
+.er404
+  font 18px/1.4 $ss
+  margin-bottom 60px
+  min-height 200px
+
   h2
     font 24px/1 $ss
 
     .bright
       color $red
-
-  section
-    font 18px/1.4 $ss
-    margin-bottom 60px
 
 .owl-carousel
   h2

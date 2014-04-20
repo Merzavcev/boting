@@ -140,8 +140,6 @@ a:active {
 .grid__1-3 {
   display: inline-block;
   vertical-align: top;
-/*-moz-box-sizing border-box*/
-/*box-sizing border-box*/
 }
 .grid__2-3 {
   width: 67%;
@@ -174,11 +172,11 @@ a:active {
   font: 14px/1.4 sans-serif;
   margin-bottom: 30px;
 }
-.work .work__image {
+.work__image {
   float: right;
   padding: 10px;
 }
-.work .work__price {
+.work__price {
   width: 100%;
   height: auto;
   padding-top: 20px;
@@ -189,15 +187,15 @@ a:active {
 .teach {
   min-height: 300px;
 }
-.teach h2 {
-  font: 24px/1 'Open Sans Condensed', sans-serif;
-}
-.teach h2 .bright {
-  color: #c90000;
-}
 .teach section {
   font: 14px/1.4 sans-serif;
   margin-bottom: 60px;
+}
+.teach section h2 {
+  font: 24px/1 'Open Sans Condensed', sans-serif;
+}
+.teach section h2 .bright {
+  color: #c90000;
 }
 .teach section li {
   margin: 5px 0;
@@ -205,15 +203,26 @@ a:active {
 .contact {
   min-height: 300px;
 }
-.contact h2 {
-  font: 24px/1 'Open Sans Condensed', sans-serif;
-}
-.contact h2 .bright {
-  color: #c90000;
-}
 .contact section {
   font: 18px/1.4 'Open Sans Condensed', sans-serif;
   margin-bottom: 60px;
+}
+.contact section h2 {
+  font: 24px/1 'Open Sans Condensed', sans-serif;
+}
+.contact section h2 .bright {
+  color: #c90000;
+}
+.er404 {
+  font: 18px/1.4 'Open Sans Condensed', sans-serif;
+  margin-bottom: 60px;
+  min-height: 200px;
+}
+.er404 h2 {
+  font: 24px/1 'Open Sans Condensed', sans-serif;
+}
+.er404 h2 .bright {
+  color: #c90000;
 }
 .owl-carousel h2 {
   margin-bottom: 30px;
