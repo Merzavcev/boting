@@ -1,7 +1,9 @@
 doctype html
 html(lang="ru")
     head
+        meta(charset="UTF-8")
         title=pageTitle
+        meta(name="description", content="Курсовые МГТУ Баумана, Детали машин,Зябликов,Гудков,курсач МГТУ скачать,Детали машин МГТУ скачать,ПОмощь мгту им баумана, курсовые работы мгту, детали и 3d модели, заказать,3d детали машиностроения")
         link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic', rel='stylesheet', type='text/css')
         link(href="/css/styles.css", rel="stylesheet")
         link(href="/css/owl.carousel.css", rel="stylesheet")
@@ -16,7 +18,12 @@ html(lang="ru")
                 ul.main-menu
                     each item in menuItems
                         if item.active
-                             li.main-menu__item.main-menu__item_active: a(href= item.href)= item.title
+                            li.main-menu__item.main-menu__item_active
+                                a(href= item.href)= item.title
+                                if item.nested
+                                    ul.sub-menu
+                                        each subItem in item.nested
+                                            li.sub-menu__item: a(href= subItem.href)= subItem.title                            
                         else
                             li.main-menu__item
                                 a(href= item.href)= item.title

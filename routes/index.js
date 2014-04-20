@@ -27,7 +27,7 @@ module.exports = function (app) {
             case 'tmm' : tmpl = 'tmm.jade';
                 break;
             default :
-                tmpl = '404.jade';
+                tmpl = '../404.jade';
         }
 
         res.render('work/' + tmpl, {
@@ -49,4 +49,11 @@ module.exports = function (app) {
             menuItems: menuItems(req.url)
         });
     })
+
+    app.get('*', function (req, res) {
+        res.render('404.jade', {
+            pageTitle: '404',
+            menuItems: menuItems(req.url)
+        });
+    })    
 };
